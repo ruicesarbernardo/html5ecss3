@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            border: 10px solid red;
+            
+        }
+        tr {
+            border: 5px solid blue;
+            
+        }
+        tr.linhaA {
+            background-color: rgb(207, 207, 207);
+        }
+        tr.linhaB {
+            background-color: grey;
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td.dadoC {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela    
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+    -->
+    <table> <!--como base uma tabela excel ABC/1234-->
+        <tr class="linhaA"> <!--PRIMEIRA LINHA-->
+            <td>A1</td> 
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linhaB"> <!--SEGUNDA LINHA-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linhaA"> <!--TERCEIRA LINHA-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="dadoC">C3</td>
+        </tr>
+        <tr class="linhaB"> <!--QUARTA LINHA-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
