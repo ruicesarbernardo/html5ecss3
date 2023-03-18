@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        td.num {
+            text-align: right;
+        }
+        thead {
+            background-color: grey;
+            color: white;
+        }
+        tfoot {
+            background-color: lightgrey;
+            color: blue;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR. TD. TH
+    -->
+</body>
+    <table>
+        <caption>População do País</caption>
+        <thead>
+            <tr>
+                <th scope="col">Distrito</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Viseu</td>
+                <td class="num">523 125</td>
+            </tr>
+            <tr>
+                <td>Lisboa</td>
+                <td class="num">3 025 748</td>
+            </tr>
+            <tr>
+                <td>Porto</td>
+                <td class="num">1 895 856</td>
+            </tr>
+            <tr>
+                <td>Restantes</td>
+                <td class="num">4 679 797</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>10 124 526</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</html>
