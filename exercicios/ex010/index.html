@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dragon.ico" type="image/x-icon">
+    <title>Trabalhar com Links</title>
+</head>
+<body>
+    <h1>Usar Links Externos</h1>
+    <p>Podes entrar no meu <a href="http://cesarbernardo.blogspot.com/" target="_blank" rel="external">blog publico no blogspot</a></p>
+    <p>Podes visitar o meu <a href="https://studio.youtube.com/channel/UCsgdpOvtBYKXnvHxNM6-ZFw">canal no youtube</a></p> 
+    
+    <!--sem o TARGET="_BLANK" vai substituir a página actual perla nova. Usar também REL="EXTERNAL" para indicar que é relativo a externo-->
+
+    <h1>Usar Links Internos</h1>
+    <p>Esta é a primeira página do meu site. Se quiseres, podes visitar a segunda página <a href="pag002.html" rel="next"> aqui neste link</a>.</p>
+    <p>Podes também visitar a <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p>
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/resumo-html-5-entendendo-e-executando-mark-pilgrim.pdf" download="livro.pdf">Download do livro em pdf</a></li>
+        <li><a href="livro/livro.zip"download>Livro compactado em zip</a></li>
+    </ul>
+</body>
+</html>

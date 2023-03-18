@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tenta abrir este site em vários dispositivos diferentes ou simplesmente aumenta e diminui o tamanho do navegador.</p>
+
+<picture> <!--ORDEM POR DEFEITO NO SOURCE MEDIA TYPE-->
+    <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+    <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-p.png" alt="imagem pequena">
+</picture>
+
+<picture> <!--ORDEM DO GUANABARA-->
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem grande">
+</picture>
+
+<h1>Reprodução de Áudio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+<audio src="midia/iggypop_candy.mp3" controls>Iggy</audio>
+<!--EM CIMA A FORMA MAIS FÁCIL MAS POSSÍVEL DE INCOMPATIBILIDADES-->
+<!--EM BAIXO, POR ORDEM DE COMPATIBILIDADE DO NAVEGADOR-->
+<audio preload="metadata" controls loop>
+    <source src="midia/iggypop_candy.mp3" type="audio/mpeg">
+    <source src="midia/iggypop_candy.ogg" type="audio/ogg">
+    <source src="midia/iggypop_candy.wav" type="audio/wav">
+    <p>Se o teu navegador não suportar áudio, sempre podes fazer o <a href="midia/iggypop_candy.mp3" download="">download do ficheiro</a></p>
+</audio>
+<p>Se o teu navegador não suportar áudio, sempre podes fazer o <a href="midia/iggypop_candy.mp3" download="Iggy Pop Candy">download do ficheiro</a></p>
+
+</body>
+</html>

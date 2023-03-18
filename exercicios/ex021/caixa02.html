@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(197, 197, 197);
+            margin: 0px;
+        }
+        header {
+               background-color: lightseagreen;
+               padding: 10px;
+               margin: 10px;
+               border-radius: 10px;
+        }
+        nav {
+            background-color: rgb(26, 158, 151);
+            padding: 5px 1px;
+            box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.274);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-left: 5px;
+            
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: rgb(49, 49, 49);
+        }
+        main {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px;
+        }
+        article {
+            background-color: lightgrey;
+            padding: 12px;
+            box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+        
+        
+        }
+        article > aside {
+            background-color: rgb(179, 179, 179);
+            padding: 1px 10px;
+            font-size: 0.8em;
+            box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-image: linear-gradient(lightseagreen, rgb(197, 197, 197));
+            height: 50px;
+            color: white;
+            padding: 1px;
+            margin: 0px;
+            text-align: center;
+            font-size: 0.7em;
+            border-radius: 10px;
+        }
+        footer > p {
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Desporto Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <article>
+                <h3>Notícia sobre Aldeia de Nacomba</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam beatae corrupti voluptate voluptatum libero, consequuntur labore tempore commodi alias voluptates quae, molestiae cupiditate exercitationem quam iste? Recusandae, sequi repellat.</p>
+                <aside>                    
+                    <p>Artigo escrito por César Bernardo</p>
+                </aside>
+            </article>
+
+            <article>
+                <h3>Destaques</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, possimus fugit! Id, iste expedita necessitatibus eaque non eius velit laudantium nihil voluptatem ipsa pariatur a, laboriosam assumenda adipisci hic soluta.</p>
+                <aside>
+                    <p>Artigo escrito por César Bernardo</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <em><strong>BlueDragon</strong></em></p>
+    </footer>
+</body>
+</html>
