@@ -1,22 +1,18 @@
 @charset "UTF-8";
-
-/* CONFIGURAÇÕES NORMAIS */
-
-* {
+*{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 html, body {
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     background-color: blue;
+    background-size: contain;
     background-repeat: no-repeat;
-  
 }
 h1 {
     color: white;
-    text-shadow: 2px 2px 0px rgb(0, 0, 138);
     padding: 10px;
+    text-shadow: 2px 2px 5px darkblue;
 }
