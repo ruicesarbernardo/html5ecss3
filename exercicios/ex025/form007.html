@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+   <h1>Exemplo de formulátrio</h1>
+   <form action="registo.php" method="get" autocomplete="off"></form>
+        <p>
+            <label for="idis">Distrito:</label>
+            <select name="dis" id="idis">
+
+                <option value="" selected>--- Selecionar---</option>
+                <optgroup label="Interior">
+                    <option value="VS">Viseu</option>
+                    <option value="VR">Vila Real</option>
+                    <option value="GRD">Guarda</option>
+                </optgroup>
+
+                <optgroup label="Litoral">
+                    <option value="PRT">Porto</option>
+                    <option value="AVR">Aveiro</option>
+                    <option value="BRG">Braga</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="escolher ou introduzir">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="PROF">Professor</option>
+                <option value="CRT">Carteiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="deixe aqui a sua mensagem, escreva sem limites, estamos cá para ler"></textarea>
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
